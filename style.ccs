@@ -305,3 +305,52 @@ font-size:35px;
 
 
 }
+
+/* LOGO SCP ROTATIF EN ARRIERE PLAN */
+
+.scp-background {
+
+    position: fixed;
+
+    top:50%;
+    left:50%;
+
+    transform:translate(-50%, -50%);
+
+    z-index:-2;
+
+    opacity:0.08;
+
+    pointer-events:none;
+
+}
+
+
+
+.scp-background img {
+
+    width:600px;
+
+    animation: rotationSCP 60s linear infinite;
+
+}
+
+
+
+/* Animation rotation */
+
+@keyframes rotationSCP {
+
+    from {
+
+        transform:rotate(0deg);
+
+    }
+
+    to {
+
+        transform:rotate(360deg);
+
+    }
+
+}
