@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap');
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+body{
+
+    background:#050914;
+    color:white;
+    font-family:Inter, sans-serif;
+
+    overflow-x:hidden;
+}
+
+
+
+.grid{
+
+position:fixed;
+inset:0;
+
+background-image:
+linear-gradient(#00aaff15 1px, transparent 1px),
+linear-gradient(90deg,#00aaff15 1px, transparent 1px);
+
+background-size:50px 50px;
+
+z-index:-1;
+
+}
+
+
+
+header{
+
+display:flex;
+align-items:center;
+
+padding:40px;
+
+gap:25px;
+
+border-bottom:1px solid #00aaff55;
+
+}
+
+
+
+.logo{
+
+font-size:45px;
+font-weight:900;
+
+border:2px solid #00aaff;
+
+padding:10px 18px;
+
+color:#00c8ff;
+
+}
+
+
+
+header h1{
+
+font-size:32px;
+
+}
+
+
+
+header p{
+
+color:#8aa8bb;
+
+}
+
+
+
+
+.hero{
+
+text-align:center;
+
+padding:120px 20px;
+
+}
+
+
+
+.hero h2{
+
+font-size:55px;
+
+}
+
+
+.hero span{
+
+color:#00c8ff;
+
+}
+
+
+
+.hero p{
+
+margin:30px;
+
+font-size:20px;
+
+color:#b7c5d1;
+
+}
+
+
+
+button{
+
+background:none;
+
+border:1px solid #00c8ff;
+
+color:#00c8ff;
+
+padding:15px 35px;
+
+font-size:16px;
+
+cursor:pointer;
+
+transition:.3s;
+
+}
+
+
+
+button:hover{
+
+background:#00c8ff;
+color:black;
+
+}
+
+
+
+
+
+.card,
+.research,
+.protocol,
+.join{
+
+margin:80px auto;
+
+max-width:1100px;
+
+padding:40px;
+
+background:#0b1425cc;
+
+border:1px solid #16334d;
+
+border-radius:15px;
+
+}
+
+
+
+.card h2,
+.research h2,
+.protocol h2,
+.join h2{
+
+color:#00c8ff;
+
+margin-bottom:25px;
+
+}
+
+
+
+.card p{
+
+line-height:1.8;
+
+color:#c8d4df;
+
+}
+
+
+
+.boxes{
+
+display:flex;
+
+gap:25px;
+
+}
+
+
+
+.box{
+
+flex:1;
+
+background:#08101dcc;
+
+padding:30px;
+
+border:1px solid #155075;
+
+}
+
+
+
+.box h3{
+
+color:#00c8ff;
+
+margin-bottom:15px;
+
+}
+
+
+
+
+.steps{
+
+text-align:center;
+
+font-size:22px;
+
+}
+
+
+
+.steps span{
+
+color:#00c8ff;
+
+}
+
+
+
+.quote{
+
+text-align:center;
+
+padding:80px;
+
+font-size:30px;
+
+font-style:italic;
+
+color:#00c8ff;
+
+}
+
+
+
+
+.join{
+
+text-align:center;
+
+}
+
+
+
+footer{
+
+padding:30px;
+
+text-align:center;
+
+border-top:1px solid #16334d;
+
+color:#7c94a5;
+
+}
+
+
+
+
+@media(max-width:800px){
+
+.boxes{
+
+flex-direction:column;
+
+}
+
+
+.hero h2{
+
+font-size:35px;
+
+}
+
+
+}
