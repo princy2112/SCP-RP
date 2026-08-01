@@ -1,38 +1,10 @@
-// Animation apparition au scroll
-
-const elements = document.querySelectorAll(
-".card,.research,.protocol,.join,.quote"
-);
-
-
-window.addEventListener("scroll",()=>{
-
-
-elements.forEach(el=>{
-
-
-let position = el.getBoundingClientRect().top;
-
-
-if(position < window.innerHeight - 100){
-
-el.style.opacity="1";
-el.style.transform="translateY(0)";
-
-}
-
-
-});
-
-
-});
-
-
-
-elements.forEach(el=>{
-
-el.style.opacity="0";
-el.style.transform="translateY(50px)";
-el.style.transition="1s";
-
+// placeholder script to avoid 404s and provide a small enhancement
+console.log('SCP-RP site assets loaded');
+// simple interaction for buttons
+document.addEventListener('DOMContentLoaded', function(){
+  document.querySelectorAll('button').forEach(function(b){
+    b.addEventListener('click', function(){
+      alert('Merci — votre demande a été envoyée au Département Scientifique (factice).');
+    });
+  });
 });
